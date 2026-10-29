@@ -1,0 +1,6 @@
+{
+  "name": "우리반 네컷 - 유치원 포토부스",
+  "description": "유치원과 어린이집 아이들을 위한 귀여운 우리반 네컷 사진관! 3-2-1 카운트다운과 함께 5장의 사진을 찍고, 마음에 드는 4컷을 골라 예쁜 프레임으로 완성하세요.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

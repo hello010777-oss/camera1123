@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'TtukttakGamja';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/2610081905@tuktakpotato/tuktakpotato/tuktakpotato.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    font-family: 'TtukttakGamja', 'Gowun Dodum', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.font-cute {
+  font-family: 'TtukttakGamja', 'Gaegu', cursive, sans-serif;
+}
+
+.font-gamja {
+  font-family: 'TtukttakGamja', sans-serif;
+}
+
+.font-dongle {
+  font-family: 'Dongle', sans-serif;
+}
+
+.font-gowun {
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+/* Custom styles for printing */
+@media print {
+  body {
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+/* Flash animation for camera capture */
+@keyframes cameraFlash {
+  0% { opacity: 0.95; }
+  100% { opacity: 0; }
+}
+
+.camera-flash {
+  animation: cameraFlash 0.35s ease-out forwards;
+}
+
+/* Shimmer / bouncy animations */
+@keyframes bounceSmall {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+.animate-bounce-gentle {
+  animation: bounceSmall 2s ease-in-out infinite;
+}
